@@ -7,6 +7,8 @@ import controller.HorarioController;
 
 public class Principal {
 
+	private static final String DIR = "E:\\OneDrive - Centro Paula Souza 1\\Horario Fatec ZL\\2016-1\\XML"; 
+	
 	public static void main(String[] args) {
 //		period();
 //		options();
@@ -16,9 +18,8 @@ public class Principal {
 	}
 	
 	private static void classes() {
-		String dir = "E:\\OneDrive - Centro Paula Souza 1\\Horario Fatec ZL\\2015-2\\HTML\\XML";
 		String nomeArq = "classes.txt";
-		HorarioController hController = new HorarioController(dir, nomeArq);
+		HorarioController hController = new HorarioController(DIR, nomeArq);
 		try {
 			hController.cadastroClasses();
 		} catch (IOException | SQLException e) {
@@ -27,9 +28,8 @@ public class Principal {
 	}
 
 	private static void cards() {
-		String dir = "E:\\OneDrive - Centro Paula Souza 1\\Horario Fatec ZL\\2015-2\\HTML\\XML";
 		String nomeArq = "cards.txt";
-		HorarioController hController = new HorarioController(dir, nomeArq);
+		HorarioController hController = new HorarioController(DIR, nomeArq);
 		try {
 			hController.cadastroCards();
 		} catch (IOException | SQLException e) {
@@ -38,9 +38,8 @@ public class Principal {
 	}
 
 	private static void lessons() {
-		String dir = "E:\\OneDrive - Centro Paula Souza 1\\Horario Fatec ZL\\2015-2\\HTML\\XML";
 		String nomeArq = "lessons.txt";
-		HorarioController hController = new HorarioController(dir, nomeArq);
+		HorarioController hController = new HorarioController(DIR, nomeArq);
 		try {
 			hController.cadastroLessons();
 		} catch (IOException | SQLException e) {
@@ -49,9 +48,8 @@ public class Principal {
 	}
 
 	private static void options() {
-		String dir = "E:\\OneDrive - Centro Paula Souza 1\\Horario Fatec ZL\\2015-2\\HTML\\XML";
 		String nomeArq = "options.txt";
-		HorarioController hController = new HorarioController(dir, nomeArq);
+		HorarioController hController = new HorarioController(DIR, nomeArq);
 		try {
 			hController.cadastroOptions();
 		} catch (IOException | SQLException e) {
@@ -60,9 +58,8 @@ public class Principal {
 	}
 
 	private static void period(){
-		String dir = "E:\\OneDrive - Centro Paula Souza 1\\Horario Fatec ZL\\2015-2\\HTML\\XML";
 		String nomeArq = "periods.txt";
-		HorarioController hController = new HorarioController(dir, nomeArq);
+		HorarioController hController = new HorarioController(DIR, nomeArq);
 		try {
 			hController.cadastroPeriods();
 		} catch (IOException | SQLException e) {
